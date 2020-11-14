@@ -3,28 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>yocmas/main/</loc>
+    <loc>/main/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>yocmas/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>yocmas/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>yocmas/clases/</loc>
+    <loc>/clases/</loc>
   </url>
   
   <url>
-    <loc>yocmas/clases/main/</loc>
+    <loc>/clases/main/</loc>
   </url>
   
   <url>
-    <loc>yocmas/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
