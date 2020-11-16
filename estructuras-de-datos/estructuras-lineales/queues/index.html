@@ -2,18 +2,16 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.78.1" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Apuntes YoC&#43; Comunitarios">
+<meta name="description" content="Queues (colas)">
 
-<title>Apuntes YoC&#43; Comunitarios | Apuntes YoC&#43; Comunitarios</title>
+<title>Queues (colas) | Apuntes YoC&#43; Comunitarios</title>
 
 <link rel="icon" href="/yoc&#43;/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/yoc&#43;/main.min.css" media="screen">
 <link rel="stylesheet" href="/yoc&#43;/custom.css" media="screen">
 
-<link rel="alternate" type="application/rss+xml" href="yoc+/index.xml" title="Apuntes YoC+ Comunitarios" />
 <!--Made with Geekdoc theme https://github.com/xoxys/hugo-geekdoc-->
 
 </head>
@@ -152,7 +150,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="yoc&#43;/estructuras-de-datos/estructuras-lineales/queues/" class="gdoc-nav__entry ">
+                    <a href="yoc&#43;/estructuras-de-datos/estructuras-lineales/queues/" class="gdoc-nav__entry is-active">
                         Queues (colas)
                     </a>
                 </span>
@@ -468,7 +466,28 @@
                 
     
     
-        Apuntes YoC+ Comunitarios
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='yoc+/'>Apuntes YoC+ Comunitarios</a> / <a href='yoc+/estructuras-de-datos/'>Estructuras de datos</a> / <a href='yoc+/estructuras-de-datos/estructuras-lineales/'>Estructuras lineales</a> / Queues (colas)
+    
+
+    
+
+    
+
     
 
             </span>
@@ -479,8 +498,9 @@
     </span>
 </div>
 
+
     <article class="gdoc-markdown">
-        <h1>Apuntes YoC&#43; Comunitarios</h1>
+        <h1>Queues (colas)</h1>
         
 
 
@@ -488,6 +508,93 @@
     
 
 
+<div class="ox-hugo-toc toc">
+<div></div>
+<div class="heading">Table of Contents</div>
+<ul>
+<li><a href="#push--empujar">push (empujar)</a></li>
+<li><a href="#front--frente">front (frente)</a></li>
+<li><a href="#pop--quitar">pop (quitar)</a></li>
+<li><a href="#empty--vac%C3%ADo">empty (vacío)</a></li>
+<li><a href="#size--tama%C3%B1o">size (tamaño)</a></li>
+</ul>
+</div>
+<!--endtoc-->
+<p>La cola es una estructura de datos lineal al que sólo puedes acceder al primer elemento que fue insertado. Imagina una fila de una caja de un supermercado, por ejemplo.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">queue</span> <span class="o">&lt;</span> <span class="kt">int</span> <span class="o">&gt;</span> <span class="n">colita</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h2 id="push--empujar">push (empujar)<a data-clipboard-text="yoc+/yoc+/estructuras-de-datos/estructuras-lineales/queues/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor push (empujar)" href="#push--empujar"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Añade un dato al final de la cola.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">colita</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="n">colita</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+<span class="n">colita</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">colita</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">colita</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h2 id="front--frente">front (frente)<a data-clipboard-text="yoc+/yoc+/estructuras-de-datos/estructuras-lineales/queues/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor front (frente)" href="#front--frente"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Lee el dato que está al frente de la cola.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">colita</span><span class="p">.</span><span class="n">front</span><span class="p">();</span> <span class="c1">// Retorna 5, ya que fue lo primero que empujamos a la cola.
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h2 id="pop--quitar">pop (quitar)<a data-clipboard-text="yoc+/yoc+/estructuras-de-datos/estructuras-lineales/queues/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor pop (quitar)" href="#pop--quitar"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Remueve el dato que está al frente de la cola</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">colita</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>   <span class="c1">// Remueve el 5
+</span><span class="c1"></span><span class="n">colita</span><span class="p">.</span><span class="n">front</span><span class="p">();</span> <span class="c1">// Retorna 4, ya que fue lo segundo que empujamos a la cola (y que ahora está primero).
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h2 id="empty--vacío">empty (vacío)<a data-clipboard-text="yoc+/yoc+/estructuras-de-datos/estructuras-lineales/queues/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor empty (vacío)" href="#empty--vacío"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Retorna 1 si la cola está vacía, de lo contrario retorna 0.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">colita</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span> <span class="c1">// Retorna 1 ya que nuestra cola está vacía.
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h2 id="size--tamaño">size (tamaño)<a data-clipboard-text="yoc+/yoc+/estructuras-de-datos/estructuras-lineales/queues/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor size (tamaño)" href="#size--tamaño"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Retorna el tamaño de nuestra cola.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">colita</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="c1">// Retorna 0 ya que nuestra cola no tiene datos.
+</span></code></pre></td></tr></table>
+</div>
+</div>
 
 
     </article>

@@ -3,28 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/main/</loc>
-    <priority>0</priority>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/info/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-lineales/</loc>
   </url>
   
   <url>
-    <loc>/clases/</loc>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/</loc>
   </url>
   
   <url>
-    <loc>/clases/main/</loc>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/info/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/info/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/info/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-lineales/info/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/selection/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/set/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-lineales/vectors/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/insertion/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/map/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-lineales/stacks/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/estructuras-lineales/queues/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/estructuras-de-datos/</loc>
+  </url>
+  
+  <url>
+    <loc>yoc&#43;/tags/</loc>
   </url>
   
 </urlset>
