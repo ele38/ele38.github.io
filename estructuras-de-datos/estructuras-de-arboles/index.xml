@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Estructuras en forma de árbol on Apuntes YoC&#43; Comunitarios</title>
-    <link>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/</link>
+    <link>/estructuras-de-datos/estructuras-de-arboles/</link>
     <description>Recent content in Estructuras en forma de árbol on Apuntes YoC&#43; Comunitarios</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-cl</language><atom:link href="yoc+/estructuras-de-datos/estructuras-de-arboles/index.xml" rel="self" type="application/rss+xml" />
+    <language>es-cl</language><atom:link href="/estructuras-de-datos/estructuras-de-arboles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acerca de</title>
-      <link>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/info/</link>
+      <link>/estructuras-de-datos/estructuras-de-arboles/info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/info/</guid>
+      <guid>/estructuras-de-datos/estructuras-de-arboles/info/</guid>
       <description>Véase: arbol binario</description>
     </item>
     
     <item>
       <title>Set (conjunto)</title>
-      <link>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/set/</link>
+      <link>/estructuras-de-datos/estructuras-de-arboles/set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/set/</guid>
+      <guid>/estructuras-de-datos/estructuras-de-arboles/set/</guid>
       <description>Table of Contents  Inicialización insert (Insertar) find (Encontrar) erase (borrar) Iterar a través de un conjunto    No permite que hayan elementos repetidos.
 Inicialización Incluimos la librería:
 1  #include &amp;lt;set&amp;gt;   Inicializamos nuestro conjunto:
@@ -29,10 +29,10 @@ Inicialización Incluimos la librería:
     
     <item>
       <title>Map (mapa, tabla de hashing)</title>
-      <link>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/map/</link>
+      <link>/estructuras-de-datos/estructuras-de-arboles/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>yoc&#43;/estructuras-de-datos/estructuras-de-arboles/map/</guid>
+      <guid>/estructuras-de-datos/estructuras-de-arboles/map/</guid>
       <description>Table of Contents  Ejemplo cotidiano Inicializar Insert (insertar) Operar con los valores Find (encontrar) Erase (borrar) Recorrer los valores de un mapa Dudas que no dejan dormir    Toma dos datos, una llave y un valor. Puedes buscar una llave en tiempo logarítmico con la implementación de la STL. Pero con otras implementaciones se puede hacer en tiempo constante. Las llaves no se pueden repetir.
 Ejemplo cotidiano Libros:</description>
     </item>

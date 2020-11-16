@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algoritmos de ordenamiento on Apuntes YoC&#43; Comunitarios</title>
-    <link>yoc&#43;/Algoritmos-de-ordenamiento/</link>
+    <link>/Algoritmos-de-ordenamiento/</link>
     <description>Recent content in Algoritmos de ordenamiento on Apuntes YoC&#43; Comunitarios</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-cl</language><atom:link href="yoc+/Algoritmos-de-ordenamiento/index.xml" rel="self" type="application/rss+xml" />
+    <language>es-cl</language><atom:link href="/Algoritmos-de-ordenamiento/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acerca de</title>
-      <link>yoc&#43;/Algoritmos-de-ordenamiento/info/</link>
+      <link>/Algoritmos-de-ordenamiento/info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>yoc&#43;/Algoritmos-de-ordenamiento/info/</guid>
+      <guid>/Algoritmos-de-ordenamiento/info/</guid>
       <description>Cada algoritmo de ordenamiento tiene su forma de operar, y podría ayudar a conseguir la respuesta a un problema, no necesariamente por el resultado del ordenamiento.</description>
     </item>
     
