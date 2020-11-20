@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Acerca de">
+<meta name="description" content="Arrays multidimensionales">
 
-<title>Acerca de | Apuntes YoC&#43; Comunitarios</title>
+<title>Arrays multidimensionales | Apuntes YoC&#43; Comunitarios</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -99,7 +99,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/estructuras-de-datos/estructuras-lineales/info/" class="gdoc-nav__entry is-active">
+                    <a href="/estructuras-de-datos/estructuras-lineales/info/" class="gdoc-nav__entry ">
                         Acerca de
                     </a>
                 </span>
@@ -133,7 +133,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/" class="gdoc-nav__entry ">
+                    <a href="/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/" class="gdoc-nav__entry is-active">
                         Arrays multidimensionales
                     </a>
                 </span>
@@ -515,7 +515,7 @@
         
     
     
-        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/estructuras-de-datos/'>Estructuras de datos</a> / <a href='/estructuras-de-datos/estructuras-lineales/'>Estructuras lineales</a> / Acerca de
+        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/estructuras-de-datos/'>Estructuras de datos</a> / <a href='/estructuras-de-datos/estructuras-lineales/'>Estructuras lineales</a> / Arrays multidimensionales
     
 
     
@@ -534,7 +534,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Acerca de</h1>
+        <h1>Arrays multidimensionales</h1>
         
 
 
@@ -542,7 +542,44 @@
     
 
 
-<p>Rellenar página</p>
+<div class="ox-hugo-toc toc">
+<div></div>
+<div class="heading">Table of Contents</div>
+<ul>
+<li><a href="#inicializar-un-arreglo-multidimensional">Inicializar un arreglo multidimensional</a></li>
+<li><a href="#asignar-valores-en-un-arreglo-multidimensional">Asignar valores en un arreglo multidimensional</a></li>
+</ul>
+</div>
+<!--endtoc-->
+<p>Un array multidimensional es aquel que requiuere de más de un índice para ser llamado, como su nombre lo indica, es útil para cuando necesitamos acceder a datos que requieren más de una dimensión, como por ejemplo valores dentro de una malla. Otra forma de enternder los arrays multidimensionales es como un arreglo de arreglos (de arreglos de arreglos.. n veces, siendo n la cantidad de dimensiones). Los arreglos de 2 dimensiones también son conocidos como matrices.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="inicializar-un-arreglo-multidimensional">Inicializar un arreglo multidimensional<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inicializar un arreglo multidimensional" href="#inicializar-un-arreglo-multidimensional"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Para esto, hay que especificar el tamaño de cada dimensión del array. Notar que la regla de que empiezan en 0 y terminan en n-1 se sigue cumpliendo. Es posible asignarles valores predeterminados, pero creo que eso se va poniendo exponencialmente más psicópata a medida de que vas incrementando las dimensiones del array a crear, por lo que no lo voy a demostrar.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">int</span> <span class="n">matriz</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">tridimensional</span><span class="p">[</span><span class="mi">100</span><span class="p">][</span><span class="mi">100</span><span class="p">][</span><span class="mi">100</span><span class="p">];</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h2 id="asignar-valores-en-un-arreglo-multidimensional">Asignar valores en un arreglo multidimensional<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Asignar valores en un arreglo multidimensional" href="#asignar-valores-en-un-arreglo-multidimensional"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Es muy similar a cómo se hace en un arreglo unidimensional, solo que se especifica cada índice.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="n">matriz</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">tridimensional</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">m</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
 
 
     </article>

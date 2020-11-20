@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/estructuras-de-datos/estructuras-de-arboles/set/</guid>
-      <description>Table of Contents  Inicialización insert (Insertar) find (Encontrar) erase (borrar) Iterar a través de un conjunto    No permite que hayan elementos repetidos.
+      <description>Table of Contents  Inicialización insert (Insertar) find (Encontrar) erase (borrar) Iterar a través de un conjunto    Es una lista que no permite que hayan elementos repetidos.
 Inicialización Incluimos la librería:
 1  #include &amp;lt;set&amp;gt;   Inicializamos nuestro conjunto:
 2  set &amp;lt; int &amp;gt; conjunto; // int puede ser reemplazado con cualquier otro tipo de dato    insert (Insertar) Inserta un dato. Retorna un par de elementos, el primero siendo el iterador del valor insertado y el segundo siendo un bool que marca si es que ya existía o no.</description>

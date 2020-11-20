@@ -43,6 +43,10 @@
   </url>
   
   <url>
+    <loc>/estructuras-de-datos/estructuras-lineales/arrays/</loc>
+  </url>
+  
+  <url>
     <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/</loc>
   </url>
   
@@ -55,7 +59,7 @@
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/vectors/</loc>
+    <loc>/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/</loc>
   </url>
   
   <url>
@@ -64,6 +68,10 @@
   
   <url>
     <loc>/estructuras-de-datos/estructuras-de-arboles/map/</loc>
+  </url>
+  
+  <url>
+    <loc>/estructuras-de-datos/estructuras-lineales/vectors/</loc>
   </url>
   
   <url>

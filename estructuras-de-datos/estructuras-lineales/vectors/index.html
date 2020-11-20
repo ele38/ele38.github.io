@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Vectores">
+<meta name="description" content="Vectors (vectores)">
 
-<title>Vectores | Apuntes YoC&#43; Comunitarios</title>
+<title>Vectors (vectores) | Apuntes YoC&#43; Comunitarios</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -116,8 +116,42 @@
             <li>
             
                 <span class="flex">
+                    <a href="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-nav__entry ">
+                        Arrays (arreglos)
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/" class="gdoc-nav__entry ">
+                        Arrays multidimensionales
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
                     <a href="/estructuras-de-datos/estructuras-lineales/vectors/" class="gdoc-nav__entry is-active">
-                        Vectores
+                        Vectors (vectores)
                     </a>
                 </span>
             
@@ -481,7 +515,7 @@
         
     
     
-        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/estructuras-de-datos/'>Estructuras de datos</a> / <a href='/estructuras-de-datos/estructuras-lineales/'>Estructuras lineales</a> / Vectores
+        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/estructuras-de-datos/'>Estructuras de datos</a> / <a href='/estructuras-de-datos/estructuras-lineales/'>Estructuras lineales</a> / Vectors (vectores)
     
 
     
@@ -500,7 +534,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Vectores</h1>
+        <h1>Vectors (vectores)</h1>
         
 
 
@@ -512,16 +546,19 @@
 <div></div>
 <div class="heading">Table of Contents</div>
 <ul>
+<li><a href="#inicializar-un-vector">Inicializar un vector</a></li>
 <li><a href="#asignar-un-valor">Asignar un valor</a></li>
 <li><a href="#push-back--empujar-atr%C3%A1s">push back (empujar atrás)</a></li>
 <li><a href="#pop-back--quitar-atr%C3%A1s">pop back (quitar atrás)</a></li>
 <li><a href="#insert--insertar">insert (insertar)</a></li>
 <li><a href="#erase--borrar">erase (borrar)</a></li>
+<li><a href="#iteradores-de-un-arreglo">Iteradores de un arreglo</a></li>
 </ul>
 </div>
 <!--endtoc-->
-<p>Los vectores son como arreglos, excepto de que el tamaño es dinámico, es decir, se puede cambiar.
-Incluimos la librería:</p>
+<p>Los vectores son como arreglos, excepto de que el tamaño es dinámico, es decir, se puede cambiar.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="inicializar-un-vector">Inicializar un vector<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/vectors/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inicializar un vector" href="#inicializar-un-vector"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Incluimos la librería:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -621,6 +658,14 @@ Incluimos la librería:</p>
 </span></code></pre></td></tr></table>
 </div>
 </div>
+<div class="gdoc-page__anchorwrap"><h2 id="iteradores-de-un-arreglo">Iteradores de un arreglo<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/vectors/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Iteradores de un arreglo" href="#iteradores-de-un-arreglo"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Hay ciertos iteradores que podemos usar en un arreglo que nos ayudarán en algunos casos, como por ejemplo si quieremos recorrer un arreglo. Estos son:</p>
+<ul>
+<li>begin() &ndash; Iterador que accede al primer valor del arreglo.</li>
+<li>end() &ndash; Accede al final del arreglo.</li>
+<li>rbegin() &ndash; Accede al ultimo elemento del arreglo</li>
+<li>rend &ndash; Accede al inicio del arreglo</li>
+</ul>
 
 
     </article>

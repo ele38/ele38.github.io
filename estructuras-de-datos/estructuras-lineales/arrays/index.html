@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Acerca de">
+<meta name="description" content="Arrays (arreglos)">
 
-<title>Acerca de | Apuntes YoC&#43; Comunitarios</title>
+<title>Arrays (arreglos) | Apuntes YoC&#43; Comunitarios</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -99,7 +99,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/estructuras-de-datos/estructuras-lineales/info/" class="gdoc-nav__entry is-active">
+                    <a href="/estructuras-de-datos/estructuras-lineales/info/" class="gdoc-nav__entry ">
                         Acerca de
                     </a>
                 </span>
@@ -116,7 +116,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-nav__entry ">
+                    <a href="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-nav__entry is-active">
                         Arrays (arreglos)
                     </a>
                 </span>
@@ -515,7 +515,7 @@
         
     
     
-        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/estructuras-de-datos/'>Estructuras de datos</a> / <a href='/estructuras-de-datos/estructuras-lineales/'>Estructuras lineales</a> / Acerca de
+        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/estructuras-de-datos/'>Estructuras de datos</a> / <a href='/estructuras-de-datos/estructuras-lineales/'>Estructuras lineales</a> / Arrays (arreglos)
     
 
     
@@ -534,7 +534,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Acerca de</h1>
+        <h1>Arrays (arreglos)</h1>
         
 
 
@@ -542,7 +542,57 @@
     
 
 
-<p>Rellenar página</p>
+<div class="ox-hugo-toc toc">
+<div></div>
+<div class="heading">Table of Contents</div>
+<ul>
+<li><a href="#inicializaci%C3%B3n">Inicialización</a></li>
+<li><a href="#leer-el-valor-de-un-arreglo">Leer el valor de un arreglo</a></li>
+<li><a href="#asignar-valores-a-un-arreglo">Asignar valores a un arreglo</a></li>
+</ul>
+</div>
+<!--endtoc-->
+<p>Los arrays son conjuntos de datos que se almacenan en memoria de manera contigua usando el mismo nombre. Se usan índices para diferenciar los distintos valores del arreglo.
+Para crear una arreglo es necesario saber la cantidad de elementos que van a componer nuestro arreglo, pues la cantidad de elementos no se puede cambiar.
+Una cosa muy importante que al principio uno suele olvidar es que los índices de los arreglos parten en 0. Es decir, un arreglo de tamaño n puede tomar índices desde el 0 hasta el n-1.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="inicialización">Inicialización<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inicialización" href="#inicialización"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Hay dos formas de inicializar un array, especificando su tamaño o llenandolo con valores por defecto.</p>
+<div class="gdoc-page__anchorwrap"><h3 id="inicializar-un-array-por-su-tamaño">Inicializar un array por su tamaño<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inicializar un array por su tamaño" href="#inicializar-un-array-por-su-tamaño"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>Para inicializar un array por su tamaño, lo único que hay que especificar es el nombre de la variable y colocar entre &ldquo;[]&rdquo; el tamaño de nuestro arreglo. Recordar que como los arrays parten en 0, el valor máximo que podremos acceder será el tamaño del array menos 1.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">int</span> <span class="n">arreglo</span><span class="p">[</span><span class="mi">38</span><span class="p">];</span> <span class="c1">// Inicializar un arreglo de ints de tamaño 38.
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h3 id="inicializar-un-array-con-valores-por-defecto">Inicializar un array con valores por defecto<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inicializar un array con valores por defecto" href="#inicializar-un-array-con-valores-por-defecto"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>Para inicializar un array con valores por defecto, no es necesario especificar el tamaño de nuestro array, pues este está implícito en la cantidad de valores que introducimos.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">int</span> <span class="n">arreglo2</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h2 id="leer-el-valor-de-un-arreglo">Leer el valor de un arreglo<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Leer el valor de un arreglo" href="#leer-el-valor-de-un-arreglo"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Para leer un valor de nuestro arreglo, solo hay que especificar el nombre del arreglo y su índice. Notar que sólo se puede acceder a un valor de un arreglo a la vez.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">arreglo2</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span> <span class="c1">// Retorna 1
+</span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="asignar-valores-a-un-arreglo">Asignar valores a un arreglo<a data-clipboard-text="/estructuras-de-datos/estructuras-lineales/arrays/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Asignar valores a un arreglo" href="#asignar-valores-a-un-arreglo"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Para esto, hay que especificar la variable, el índice al cuál acceder y especificar su nuevo valor. Recordar que el valor del índice puede ser una variable, pero que no puede estar fuera del rango del tamaño de nuestro arreglo.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">arreglo2</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// El indice 3 de nuestro arreglo, ahora tiene el valor 3
+</span></code></pre></td></tr></table>
+</div>
+</div>
 
 
     </article>
