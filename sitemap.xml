@@ -7,7 +7,15 @@
   </url>
   
   <url>
+    <loc>/Algoritmos-de-busqueda/</loc>
+  </url>
+  
+  <url>
     <loc>/Algoritmos-de-ordenamiento/info/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/</loc>
   </url>
   
   <url>
@@ -23,7 +31,15 @@
   </url>
   
   <url>
+    <loc>/Algoritmos-de-busqueda/Implementaciones-propias/</loc>
+  </url>
+  
+  <url>
     <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/info/</loc>
   </url>
   
   <url>
@@ -43,6 +59,10 @@
   </url>
   
   <url>
+    <loc>/Algoritmos-de-busqueda/Implementaciones-propias/con_while/</loc>
+  </url>
+  
+  <url>
     <loc>/estructuras-de-datos/estructuras-lineales/arrays/</loc>
   </url>
   
@@ -51,11 +71,19 @@
   </url>
   
   <url>
+    <loc>/Algoritmos-de-busqueda/Implementaciones-propias/con_recursion/</loc>
+  </url>
+  
+  <url>
     <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/selection/</loc>
   </url>
   
   <url>
     <loc>/estructuras-de-datos/estructuras-de-arboles/set/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/</loc>
   </url>
   
   <url>
@@ -80,6 +108,18 @@
   
   <url>
     <loc>/estructuras-de-datos/estructuras-lineales/queues/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/importar/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/binary_search/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/</loc>
   </url>
   
   <url>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uso mediante la librería STL on Apuntes YoC&#43; Comunitarios</title>
+    <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/</link>
+    <description>Recent content in Uso mediante la librería STL on Apuntes YoC&#43; Comunitarios</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-cl</language><atom:link href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Importar</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/importar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/importar/</guid>
+      <description>Podemos directamente importar toda la stl o podemos importar la librería  de la siguiente forma:
+1  #include &amp;lt;algorithm&amp;gt;   </description>
+    </item>
+    
+    <item>
+      <title>binary_search()</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/binary_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/binary_search/</guid>
+      <description>La librería STL ya incluye binary search, si queremos saber si el valor 3 está en un vector, podemos ejecutar:
+1 2 3 4 5 6 7  vector&amp;lt;int&amp;gt; v{1,2,5,7}; if (binary_search (v.begin(), v.end(), 3)) { cout &amp;lt;&amp;lt; &amp;#34;Se encuentra el valor 3 en nuestro vector\n&amp;#34;; } else { cout &amp;lt;&amp;lt; &amp;#34;No hay ningún 3 en nuestro vector\n&amp;#34;; }    Retorna un bool.</description>
+    </item>
+    
+    <item>
+      <title>upper_bound() (límite superior)</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/</guid>
+      <description>La función upper_bound() de la librería STL nos entrega un puntero a un valor superior al pedido en un arreglo ordenado.
+En el caso de que no haya un valor superior al pedido, nos entrega el último valor del arreglo.
+Por ejemplo:
+1  *upper_bound(v.begin(), v.end(), 30);    Valor de retorno: iterador al 40 (posición [4])</description>
+    </item>
+    
+  </channel>
+</rss>

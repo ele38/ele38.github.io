@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Búsqueda binaria on Apuntes YoC&#43; Comunitarios</title>
+    <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/</link>
+    <description>Recent content in Búsqueda binaria on Apuntes YoC&#43; Comunitarios</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-cl</language><atom:link href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acerca de</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/info/</guid>
+      <description>Table of Contents  Ejemplos    La búsqueda binaria es un algoritmo de divide and conquer (dividir y conquistar), que nos permite encontrar un elemento dentro de una estructura ordenada rápidamente. Al ejecutarse, toma el centro de un arreglo y comprueba si el valor que se busca es igual al del centro. De no serlo, verifica si el valor es menor o mayor al del centro.
+Si el valor es mayor al del centro, se ignoran todos los valores anteriores al centro, dividiendo la cantidad de números a la mitad.</description>
+    </item>
+    
+  </channel>
+</rss>

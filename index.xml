@@ -12,7 +12,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Algoritmos-de-ordenamiento/info/</guid>
-      <description>Cada algoritmo de ordenamiento tiene su forma de operar, y podría ayudar a conseguir la respuesta a un problema, no necesariamente por el resultado del ordenamiento.</description>
+      <description>Un algoritmo de ordenamiento es aquel que toma los elementos de una estructura y les asigna un orden. Cada algoritmo de ordenamiento tiene su forma de operar, y podría ayudar a conseguir la respuesta a un problema, no necesariamente por el resultado del ordenamiento.</description>
+    </item>
+    
+    <item>
+      <title>Acerca de</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/info/</guid>
+      <description>Table of Contents  Ejemplos    La búsqueda binaria es un algoritmo de divide and conquer (dividir y conquistar), que nos permite encontrar un elemento dentro de una estructura ordenada rápidamente. Al ejecutarse, toma el centro de un arreglo y comprueba si el valor que se busca es igual al del centro. De no serlo, verifica si el valor es menor o mayor al del centro.
+Si el valor es mayor al del centro, se ignoran todos los valores anteriores al centro, dividiendo la cantidad de números a la mitad.</description>
     </item>
     
     <item>
@@ -52,6 +62,16 @@
     </item>
     
     <item>
+      <title>Implementación con while</title>
+      <link>/Algoritmos-de-busqueda/Implementaciones-propias/con_while/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/Implementaciones-propias/con_while/</guid>
+      <description>Esta implementación nos retorna el índice del número a buscar dentro de un arreglo.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  int binarySearch(int arr[], int l, int r, int x) { while (l &amp;lt;= r) { int m = l + (r - l) / 2; // Revisa si x esta al medio  if (arr[m] == x) return m; // Si x es mayor, ignorar la izquierda  if (arr[m] &amp;lt; x) l = m + 1; // Si x es menor, ignorar la derecha  else r = m - 1; } return -1; }    </description>
+    </item>
+    
+    <item>
       <title>Arrays (arreglos)</title>
       <link>/estructuras-de-datos/estructuras-lineales/arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -67,6 +87,16 @@
       
       <guid>/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/</guid>
       <description>Table of Contents  Ejemplo Código de ejemplo:     Se van comparando los elementos, haciendo que los más grandes suban en el arreglo, como una burbuja. Da lo mismo cómo estén ordenadas las cosas, porque puedes modificar la función de comparación. Funciona invirtiendo el orden de cada par de elementos, si es que el primero es mayor que el segundo. Por ejemplo, se podría usar para contar el número de inversiones que hay que hacer.</description>
+    </item>
+    
+    <item>
+      <title>Implementación recursiva</title>
+      <link>/Algoritmos-de-busqueda/Implementaciones-propias/con_recursion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/Implementaciones-propias/con_recursion/</guid>
+      <description>Esta implementación nos retorna el índice del número a buscar dentro de un arreglo.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  int binarySearch(int arr[], int l, int r, int x) { if (r &amp;gt;= l) { int mid = l + (r - l) / 2; // Revisa si x esta al medio  if (arr[mid] == x) return mid; // Si x es mayor, ignorar la izquierda  if (arr[mid] &amp;gt; x) return binarySearch(arr, l, mid - 1, x); // Si x es mayor, ignorar la derecha  return binarySearch(arr, mid + 1, r, x); } return -1; }    </description>
     </item>
     
     <item>
@@ -150,6 +180,38 @@ Inicializar un vector Incluimos la librería:
       <description>Table of Contents  push (empujar) front (frente) pop (quitar) empty (vacío) size (tamaño)    La cola es una estructura de datos lineal al que sólo puedes acceder al primer elemento que fue insertado. Imagina una fila de una caja de un supermercado, por ejemplo.
 1  queue &amp;lt; int &amp;gt; colita;    push (empujar) Añade un dato al final de la cola.
 2 3 4 5 6  colita.</description>
+    </item>
+    
+    <item>
+      <title>Importar</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/importar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/importar/</guid>
+      <description>Podemos directamente importar toda la stl o podemos importar la librería  de la siguiente forma:
+1  #include &amp;lt;algorithm&amp;gt;   </description>
+    </item>
+    
+    <item>
+      <title>binary_search()</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/binary_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/binary_search/</guid>
+      <description>La librería STL ya incluye binary search, si queremos saber si el valor 3 está en un vector, podemos ejecutar:
+1 2 3 4 5 6 7  vector&amp;lt;int&amp;gt; v{1,2,5,7}; if (binary_search (v.begin(), v.end(), 3)) { cout &amp;lt;&amp;lt; &amp;#34;Se encuentra el valor 3 en nuestro vector\n&amp;#34;; } else { cout &amp;lt;&amp;lt; &amp;#34;No hay ningún 3 en nuestro vector\n&amp;#34;; }    Retorna un bool.</description>
+    </item>
+    
+    <item>
+      <title>upper_bound() (límite superior)</title>
+      <link>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/</guid>
+      <description>La función upper_bound() de la librería STL nos entrega un puntero a un valor superior al pedido en un arreglo ordenado.
+En el caso de que no haya un valor superior al pedido, nos entrega el último valor del arreglo.
+Por ejemplo:
+1  *upper_bound(v.begin(), v.end(), 30);    Valor de retorno: iterador al 40 (posición [4])</description>
     </item>
     
   </channel>

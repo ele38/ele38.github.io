@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Bubble sort">
+<meta name="description" content="upper_bound() (límite superior)">
 
-<title>Bubble sort | Apuntes YoC&#43; Comunitarios</title>
+<title>upper_bound() (límite superior) | Apuntes YoC&#43; Comunitarios</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -361,7 +361,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/" class="gdoc-nav__entry is-active">
+                    <a href="/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/" class="gdoc-nav__entry ">
                         Bubble sort
                     </a>
                 </span>
@@ -573,7 +573,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/" class="gdoc-nav__entry is-active">
                         upper_bound() (límite superior)
                     </a>
                 </span>
@@ -717,7 +717,14 @@
         
     
     
-        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/Algoritmos-de-ordenamiento/'>Algoritmos de ordenamiento</a> / <a href='/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/'>Algoritmos de fuerza bruta</a> / Bubble sort
+        
+        
+        
+    
+    
+        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/Algoritmos-de-busqueda/'>Algoritmos de búsqueda</a> / <a href='/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/'>Búsqueda binaria</a> / <a href='/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/'>Uso mediante la librería STL</a> / upper_bound() (límite superior)
+    
+
     
 
     
@@ -736,7 +743,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Bubble sort</h1>
+        <h1>upper_bound() (límite superior)</h1>
         
 
 
@@ -744,103 +751,22 @@
     
 
 
-<div class="ox-hugo-toc toc">
-<div></div>
-<div class="heading">Table of Contents</div>
-<ul>
-<li><a href="#ejemplo">Ejemplo</a></li>
-<li><a href="#c%C3%B3digo-de-ejemplo">Código de ejemplo:</a></li>
-</ul>
+<p>La función upper_bound() de la librería STL nos entrega un puntero a un valor
+<strong>superior</strong> al pedido en un arreglo ordenado.</p>
+<p>En el caso de que no haya un valor superior al pedido, nos entrega el
+último valor del arreglo.</p>
+<p>Por ejemplo:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp">  <span class="o">*</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">30</span><span class="p">);</span>
+</code></pre></td></tr></table>
 </div>
-<!--endtoc-->
-<ul>
-<li>Se van comparando los elementos, haciendo que los más grandes suban en el arreglo, como una burbuja.</li>
-<li>Da lo mismo cómo estén ordenadas las cosas, porque puedes modificar la función de comparación.</li>
-<li>Funciona invirtiendo el orden de cada par de elementos, si es que el primero es mayor que el segundo.</li>
-<li>Por ejemplo, se podría usar para contar el número de inversiones que hay que hacer.</li>
-</ul>
-<div class="gdoc-page__anchorwrap"><h2 id="ejemplo">Ejemplo<a data-clipboard-text="/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Ejemplo" href="#ejemplo"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<table>
-<thead>
-<tr>
-<th><span class="underline">5</span></th>
-<th><span class="underline">3</span></th>
-<th>4</th>
-<th>1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3</td>
-<td><span class="underline">5</span></td>
-<td><span class="underline">4</span></td>
-<td>1</td>
-</tr>
-<tr>
-<td>3</td>
-<td>4</td>
-<td><span class="underline">5</span></td>
-<td><span class="underline">1</span></td>
-</tr>
-<tr>
-<td>3</td>
-<td>4</td>
-<td>1</td>
-<td><strong>5</strong></td>
-</tr>
-<tr>
-<td><span class="underline">3</span></td>
-<td><span class="underline">4</span></td>
-<td>1</td>
-<td><strong>5</strong></td>
-</tr>
-<tr>
-<td>3</td>
-<td><span class="underline">1</span></td>
-<td><span class="underline">4</span></td>
-<td><strong>5</strong></td>
-</tr>
-<tr>
-<td>3</td>
-<td>1</td>
-<td><strong>4</strong></td>
-<td><strong>5</strong></td>
-</tr>
-<tr>
-<td><span class="underline">3</span></td>
-<td><span class="underline">1</span></td>
-<td><strong>4</strong></td>
-<td><strong>5</strong></td>
-</tr>
-<tr>
-<td>1</td>
-<td><strong>3</strong></td>
-<td><strong>4</strong></td>
-<td><strong>5</strong></td>
-</tr>
-<tr>
-<td><strong>1</strong></td>
-<td><strong>3</strong></td>
-<td><strong>4</strong></td>
-<td><strong>5</strong></td>
-</tr>
-</tbody>
-</table>
-<div class="gdoc-page__anchorwrap"><h2 id="código-de-ejemplo">Código de ejemplo:<a data-clipboard-text="/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Código de ejemplo:" href="#código-de-ejemplo"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">bubblesort</span> <span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">vec</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="n">vec</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">size</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">vec</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">vec</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
-                <span class="kt">int</span> <span class="n">aux</span> <span class="o">=</span> <span class="n">vec</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
-                <span class="n">vec</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">vec</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-                <span class="n">vec</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">aux</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="k">return</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+</div>
+<p>Valor de retorno: iterador al <strong>40</strong> (posición [4])</p>
+
 
     </article>
 
