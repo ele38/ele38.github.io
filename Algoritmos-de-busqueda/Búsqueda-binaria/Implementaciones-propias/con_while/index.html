@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Implementación recursiva">
+<meta name="description" content="Implementación con while">
 
-<title>Implementación recursiva | Apuntes YoC&#43; Comunitarios</title>
+<title>Implementación con while | Apuntes YoC&#43; Comunitarios</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -592,19 +592,12 @@
             
             
         
-    </ul>
-
-            
-            </li>
-            
-            
-        
             
             
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/" class="gdoc-nav__entry ">
                         Implementaciones propias
                     </a>
                 </span>
@@ -622,7 +615,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/con_while/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_while/" class="gdoc-nav__entry is-active">
                         Implementación con while
                     </a>
                 </span>
@@ -639,13 +632,20 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/con_recursion/" class="gdoc-nav__entry is-active">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_recursion/" class="gdoc-nav__entry ">
                         Implementación recursiva
                     </a>
                 </span>
             
 
             
+            
+            </li>
+            
+            
+        
+    </ul>
+
             
             </li>
             
@@ -717,7 +717,14 @@
         
     
     
-        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/Algoritmos-de-busqueda/'>Algoritmos de búsqueda</a> / <a href='/Algoritmos-de-busqueda/Implementaciones-propias/'>Implementaciones propias</a> / Implementación recursiva
+        
+        
+        
+    
+    
+        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/Algoritmos-de-busqueda/'>Algoritmos de búsqueda</a> / <a href='/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/'>Búsqueda binaria</a> / <a href='/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/'>Implementaciones propias</a> / Implementación con while
+    
+
     
 
     
@@ -736,7 +743,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Implementación recursiva</h1>
+        <h1>Implementación con while</h1>
         
 
 
@@ -767,27 +774,31 @@
 </span><span class="lnt">18
 </span><span class="lnt">19
 </span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-cpp" data-lang="cpp">  <span class="kt">int</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
   <span class="p">{</span>
 
-      <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="p">)</span> <span class="p">{</span>
-
-          <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">l</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+      <span class="k">while</span> <span class="p">(</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">l</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
 
           <span class="c1">// Revisa si x esta al medio
-</span><span class="c1"></span>
-          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">)</span>
-          <span class="k">return</span> <span class="n">mid</span><span class="p">;</span>
+</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">)</span>
+          <span class="k">return</span> <span class="n">m</span><span class="p">;</span>
 
           <span class="c1">// Si x es mayor, ignorar la izquierda
-</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">)</span>
-          <span class="k">return</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
-          <span class="c1">// Si x es mayor, ignorar la derecha
-</span><span class="c1"></span>          <span class="k">return</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
+</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">)</span>
+          <span class="n">l</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+
+          <span class="c1">// Si x es menor, ignorar la derecha
+</span><span class="c1"></span>          <span class="k">else</span>
+          <span class="n">r</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+
       <span class="p">}</span>
       <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+
   <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>

@@ -593,19 +593,12 @@
             
             
         
-    </ul>
-
-            
-            </li>
-            
-            
-        
             
             
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/" class="gdoc-nav__entry ">
                         Implementaciones propias
                     </a>
                 </span>
@@ -623,7 +616,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/con_while/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_while/" class="gdoc-nav__entry ">
                         Implementación con while
                     </a>
                 </span>
@@ -640,13 +633,20 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/con_recursion/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_recursion/" class="gdoc-nav__entry ">
                         Implementación recursiva
                     </a>
                 </span>
             
 
             
+            
+            </li>
+            
+            
+        
+    </ul>
+
             
             </li>
             
@@ -743,6 +743,7 @@
 <ul>
 <li><a href="#acerca-de">Acerca de</a></li>
 <li><a href="#uso-mediante-la-librer%C3%ADa-stl">Uso mediante la librería STL</a></li>
+<li><a href="#implementaciones-propias">Implementaciones propias</a></li>
 </ul>
 </div>
 <!--endtoc-->
@@ -756,8 +757,8 @@ el valor es menor o mayor al del centro.</p>
 anteriores al centro, dividiendo la cantidad de números a la mitad.</p>
 <p>Si el valor es menor al del centro, se ignoran todos los valores de
 después del centro, dividiendo la cantidad de números a la mitad.</p>
-<p>La complejidad de este algoritmo es <strong>O log(N)</strong>, comparada con un
-algoritmo lineal, que en el peor de los casos tiene complejidad <strong>O (N)</strong>.</p>
+<p>La complejidad de este algoritmo es <strong>Olog(N)</strong>, comparada con un
+algoritmo lineal, que en el peor de los casos tiene complejidad <strong>O(N)</strong>.</p>
 <div class="gdoc-page__anchorwrap"><h3 id="ejemplos">Ejemplos<a data-clipboard-text="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Ejemplos" href="#ejemplos"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <div class="gdoc-page__anchorwrap"><h4 id="en-la-vida-real">en la vida real<a data-clipboard-text="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor en la vida real" href="#en-la-vida-real"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
 <p>Ir al medio de un diccionario, y buscar alfabéticamente, tomando una palabra central
@@ -840,6 +841,109 @@ superiores al valor pedido, se entrega el primer elemento del arreglo.</p>
 </div>
 </div>
 <p>Valor de retorno: iterador al <strong>40</strong> (posición [4])</p>
+<div class="gdoc-page__anchorwrap"><h2 id="implementaciones-propias">Implementaciones propias<a data-clipboard-text="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Implementaciones propias" href="#implementaciones-propias"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h3 id="implementación-con-while">Implementación con while<a data-clipboard-text="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Implementación con while" href="#implementación-con-while"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>Esta implementación nos retorna el índice del número a buscar dentro de un arreglo.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp">  <span class="kt">int</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+  <span class="p">{</span>
+
+      <span class="k">while</span> <span class="p">(</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">l</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+
+          <span class="c1">// Revisa si x esta al medio
+</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">)</span>
+          <span class="k">return</span> <span class="n">m</span><span class="p">;</span>
+
+          <span class="c1">// Si x es mayor, ignorar la izquierda
+</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">)</span>
+          <span class="n">l</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+
+          <span class="c1">// Si x es menor, ignorar la derecha
+</span><span class="c1"></span>          <span class="k">else</span>
+          <span class="n">r</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+
+  <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap"><h3 id="implementación-recursiva">Implementación recursiva<a data-clipboard-text="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Implementación recursiva" href="#implementación-recursiva"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>Esta implementación nos retorna el índice del número a buscar dentro de un arreglo.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp">  <span class="kt">int</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+  <span class="p">{</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="p">)</span> <span class="p">{</span>
+
+          <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">l</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+
+          <span class="c1">// Revisa si x esta al medio
+</span><span class="c1"></span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">)</span>
+          <span class="k">return</span> <span class="n">mid</span><span class="p">;</span>
+
+          <span class="c1">// Si x es mayor, ignorar la izquierda
+</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">)</span>
+          <span class="k">return</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
+          <span class="c1">// Si x es mayor, ignorar la derecha
+</span><span class="c1"></span>          <span class="k">return</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
 
 
     </article>

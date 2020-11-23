@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Implementaciones propias">
+<meta name="description" content="Implementación recursiva">
 
-<title>Implementaciones propias | Apuntes YoC&#43; Comunitarios</title>
+<title>Implementación recursiva | Apuntes YoC&#43; Comunitarios</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
 <link rel="stylesheet" href="/custom.css" media="screen">
 
-<link rel="alternate" type="application/rss+xml" href="/Algoritmos-de-busqueda/Implementaciones-propias/index.xml" title="Apuntes YoC+ Comunitarios" />
 <!--Made with Geekdoc theme https://github.com/xoxys/hugo-geekdoc-->
 
 </head>
@@ -593,19 +592,12 @@
             
             
         
-    </ul>
-
-            
-            </li>
-            
-            
-        
             
             
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/" class="gdoc-nav__entry is-active">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/" class="gdoc-nav__entry ">
                         Implementaciones propias
                     </a>
                 </span>
@@ -623,7 +615,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/con_while/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_while/" class="gdoc-nav__entry ">
                         Implementación con while
                     </a>
                 </span>
@@ -640,13 +632,20 @@
             <li>
             
                 <span class="flex">
-                    <a href="/Algoritmos-de-busqueda/Implementaciones-propias/con_recursion/" class="gdoc-nav__entry ">
+                    <a href="/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_recursion/" class="gdoc-nav__entry is-active">
                         Implementación recursiva
                     </a>
                 </span>
             
 
             
+            
+            </li>
+            
+            
+        
+    </ul>
+
             
             </li>
             
@@ -713,7 +712,21 @@
         
     
     
-        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/Algoritmos-de-busqueda/'>Algoritmos de búsqueda</a> / Implementaciones propias
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='/'>Apuntes YoC+ Comunitarios</a> / <a href='/Algoritmos-de-busqueda/'>Algoritmos de búsqueda</a> / <a href='/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/'>Búsqueda binaria</a> / <a href='/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/'>Implementaciones propias</a> / Implementación recursiva
+    
+
+    
+
     
 
     
@@ -728,8 +741,9 @@
     </span>
 </div>
 
+
     <article class="gdoc-markdown">
-        <h1>Implementaciones propias</h1>
+        <h1>Implementación recursiva</h1>
         
 
 
@@ -737,69 +751,6 @@
     
 
 
-<div class="ox-hugo-toc toc">
-<div></div>
-<div class="heading">Table of Contents</div>
-<ul>
-<li><a href="#implementaci%C3%B3n-con-while">Implementación con while</a></li>
-<li><a href="#implementaci%C3%B3n-recursiva">Implementación recursiva</a></li>
-</ul>
-</div>
-<!--endtoc-->
-<div class="gdoc-page__anchorwrap"><h2 id="implementación-con-while">Implementación con while<a data-clipboard-text="/Algoritmos-de-busqueda/Implementaciones-propias/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Implementación con while" href="#implementación-con-while"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<p>Esta implementación nos retorna el índice del número a buscar dentro de un arreglo.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-cpp" data-lang="cpp">  <span class="kt">int</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
-  <span class="p">{</span>
-
-      <span class="k">while</span> <span class="p">(</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
-          <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">l</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
-
-          <span class="c1">// Revisa si x esta al medio
-</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">)</span>
-          <span class="k">return</span> <span class="n">m</span><span class="p">;</span>
-
-          <span class="c1">// Si x es mayor, ignorar la izquierda
-</span><span class="c1"></span>          <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">)</span>
-          <span class="n">l</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-
-          <span class="c1">// Si x es menor, ignorar la derecha
-</span><span class="c1"></span>          <span class="k">else</span>
-          <span class="n">r</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-
-      <span class="p">}</span>
-      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div>
-<div class="gdoc-page__anchorwrap"><h2 id="implementación-recursiva">Implementación recursiva<a data-clipboard-text="/Algoritmos-de-busqueda/Implementaciones-propias/" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Implementación recursiva" href="#implementación-recursiva"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>Esta implementación nos retorna el índice del número a buscar dentro de un arreglo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

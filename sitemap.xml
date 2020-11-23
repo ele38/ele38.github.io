@@ -31,10 +31,6 @@
   </url>
   
   <url>
-    <loc>/Algoritmos-de-busqueda/Implementaciones-propias/</loc>
-  </url>
-  
-  <url>
     <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/</loc>
   </url>
   
@@ -59,19 +55,11 @@
   </url>
   
   <url>
-    <loc>/Algoritmos-de-busqueda/Implementaciones-propias/con_while/</loc>
-  </url>
-  
-  <url>
     <loc>/estructuras-de-datos/estructuras-lineales/arrays/</loc>
   </url>
   
   <url>
     <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/</loc>
-  </url>
-  
-  <url>
-    <loc>/Algoritmos-de-busqueda/Implementaciones-propias/con_recursion/</loc>
   </url>
   
   <url>
@@ -88,6 +76,10 @@
   
   <url>
     <loc>/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/</loc>
   </url>
   
   <url>
@@ -108,6 +100,14 @@
   
   <url>
     <loc>/estructuras-de-datos/estructuras-lineales/queues/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_while/</loc>
+  </url>
+  
+  <url>
+    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_recursion/</loc>
   </url>
   
   <url>
