@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algoritmos de &#34;decrecer y conquistar&#34; on ZDoc</title>
+    <link>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/</link>
+    <description>Recent content in Algoritmos de &#34;decrecer y conquistar&#34; on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    
+        <atom:link href="/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Acerca de</title>
+        <link>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/info/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/info/</guid>
+        <description>Rellenar</description>
+      </item>
+      
+      <item>
+        <title>Selection sort</title>
+        <link>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/selection/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/selection/</guid>
+        <description> Table of Contents  Rellenar ejemplo Rellenar codigo de ejemplo     Tiene dos sub-arreglos, uno de elementos ya ordenados y uno de los elementos resantes. El arreglo ya ordenado parte vacío. Busca el valor mínimo entre los elementos no ordenados y lo añade al final de los ordenados.  Rellenar ejemplo Rellenar codigo de ejemplo </description>
+      </item>
+      
+    
+  </channel>
+</rss>

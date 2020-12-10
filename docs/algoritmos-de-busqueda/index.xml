@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algoritmos de búsqueda on ZDoc</title>
+    <link>/docs/algoritmos-de-busqueda/</link>
+    <description>Recent content in Algoritmos de búsqueda on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    
+        <atom:link href="/docs/algoritmos-de-busqueda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Búsqueda binaria</title>
+        <link>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/</guid>
+        <description>Table of Contents  Acerca de Uso mediante la librería STL Implementaciones propias    Acerca de La búsqueda binaria es un algoritmo de divide and conquer (dividir y conquistar), que nos
+permite encontrar un elemento dentro de una estructura ordenada
+rápidamente. Al ejecutarse, toma el centro de un arreglo y comprueba si
+el valor que se busca es igual al del centro. De no serlo, verifica si</description>
+      </item>
+      
+    
+  </channel>
+</rss>

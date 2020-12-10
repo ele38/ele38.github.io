@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on ZDoc</title>
+    <link>/docs/</link>
+    <description>Recent content in Docs on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    
+        <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Estructuras de datos</title>
+        <link>/docs/estructuras-de-datos/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/</guid>
+        <description>Table of Contents  Estructuras lineales Estructuras en forma de árbol    Estructuras lineales Acerca de Rellenar página
+Arrays (arreglos) Los arrays son conjuntos de datos que se almacenan en memoria de manera contigua usando el mismo nombre. Se usan índices para diferenciar los distintos valores del arreglo.
+Para crear una arreglo es necesario saber la cantidad de elementos que van a componer nuestro arreglo, pues la cantidad de elementos no se puede cambiar.</description>
+      </item>
+      
+      <item>
+        <title>Algoritmos de ordenamiento</title>
+        <link>/docs/algoritmos-de-ordenamiento/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-ordenamiento/</guid>
+        <description>Table of Contents  Acerca de Algoritmos de fuerza bruta Algoritmos de &amp;ldquo;decrecer y conquistar&amp;rdquo;    Acerca de Un algoritmo de ordenamiento es aquel que toma los elementos de una estructura y les asigna un orden. Cada algoritmo de ordenamiento tiene su forma de operar, y podría ayudar a conseguir la respuesta a un problema, no necesariamente por el resultado del ordenamiento.
+Algoritmos de fuerza bruta Acerca de Rellenar</description>
+      </item>
+      
+      <item>
+        <title>Algoritmos de búsqueda</title>
+        <link>/docs/algoritmos-de-busqueda/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-busqueda/</guid>
+        <description>Table of Contents  Búsqueda binaria    Búsqueda binaria Acerca de La búsqueda binaria es un algoritmo de divide and conquer (dividir y conquistar), que nos
+permite encontrar un elemento dentro de una estructura ordenada
+rápidamente. Al ejecutarse, toma el centro de un arreglo y comprueba si
+el valor que se busca es igual al del centro. De no serlo, verifica si
+el valor es menor o mayor al del centro.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

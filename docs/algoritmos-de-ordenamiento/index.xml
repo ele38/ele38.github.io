@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algoritmos de ordenamiento on ZDoc</title>
+    <link>/docs/algoritmos-de-ordenamiento/</link>
+    <description>Recent content in Algoritmos de ordenamiento on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    
+        <atom:link href="/docs/algoritmos-de-ordenamiento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Acerca de</title>
+        <link>/docs/algoritmos-de-ordenamiento/info/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-ordenamiento/info/</guid>
+        <description>Un algoritmo de ordenamiento es aquel que toma los elementos de una estructura y les asigna un orden. Cada algoritmo de ordenamiento tiene su forma de operar, y podría ayudar a conseguir la respuesta a un problema, no necesariamente por el resultado del ordenamiento.</description>
+      </item>
+      
+      <item>
+        <title>Algoritmos de fuerza bruta</title>
+        <link>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/</guid>
+        <description>Table of Contents  Acerca de Bubble sort Insertion sort    Acerca de Rellenar
+Bubble sort  Se van comparando los elementos, haciendo que los más grandes suban en el arreglo, como una burbuja. Da lo mismo cómo estén ordenadas las cosas, porque puedes modificar la función de comparación. Funciona invirtiendo el orden de cada par de elementos, si es que el primero es mayor que el segundo.</description>
+      </item>
+      
+      <item>
+        <title>Algoritmos de &#34;decrecer y conquistar&#34;</title>
+        <link>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/</guid>
+        <description> Table of Contents  Acerca de Selection sort    Acerca de Rellenar
+Selection sort  Tiene dos sub-arreglos, uno de elementos ya ordenados y uno de los elementos resantes. El arreglo ya ordenado parte vacío. Busca el valor mínimo entre los elementos no ordenados y lo añade al final de los ordenados.  Rellenar ejemplo Rellenar codigo de ejemplo </description>
+      </item>
+      
+    
+  </channel>
+</rss>

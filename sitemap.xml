@@ -1,141 +1,93 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/</loc>
+    <loc>/docs/estructuras-de-datos/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-busqueda/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/info/</loc>
+    <loc>/docs/algoritmos-de-busqueda/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/info/</loc>
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/</loc>
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-de-arboles/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/info/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/info/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/info/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/info/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/info/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/info/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/bubble/</loc>
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-de-arboles/info/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-decrecer-y-conquistar/selection/</loc>
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/info/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/en-la-stl/</loc>
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/arrays/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/implementaciones-propias/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/bubble/</loc>
+    <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/insertion/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-decrecer-y-conquistar/selection/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/implementaciones-propias/con_while/</loc>
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-de-arboles/set/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/implementaciones-propias/con_recursion/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/en-la-stl/importar/</loc>
   </url>
   
   <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/en-la-stl/binary_search/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/</loc>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/en-la-stl/lower_bound/</loc>
   </url>
   
   <url>
-    <loc>/Algoritmos-de-ordenamiento/Algoritmos-de-fuerza-bruta/insertion/</loc>
-  </url>
-  
-  <url>
-    <loc>/estructuras-de-datos/estructuras-de-arboles/map/</loc>
-  </url>
-  
-  <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/vectors/</loc>
-  </url>
-  
-  <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/stacks/</loc>
-  </url>
-  
-  <url>
-    <loc>/estructuras-de-datos/estructuras-lineales/queues/</loc>
-  </url>
-  
-  <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_while/</loc>
-  </url>
-  
-  <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/Implementaciones-propias/con_recursion/</loc>
-  </url>
-  
-  <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/importar/</loc>
-  </url>
-  
-  <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/binary_search/</loc>
-  </url>
-  
-  <url>
-    <loc>/Algoritmos-de-busqueda/B%C3%BAsqueda-binaria/En-la-STL/lower_bound/</loc>
+    <loc>/docs/</loc>
   </url>
   
   <url>
     <loc>/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/estructuras-de-datos/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
   </url>
   
 </urlset>

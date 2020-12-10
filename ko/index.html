@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>404 Page not found – ZDoc</title>
+    <title>ZDoc</title>
     
 
 
@@ -28,9 +28,9 @@
     
     var languagedir = JSON.parse("\"ltr\"");
     
-    var baseurl = JSON.parse("\"\"");
+    var baseurl = JSON.parse("\"http://example.org\"");
     
-    var permalink = JSON.parse("\"/404.html\"");
+    var permalink = JSON.parse("\"http://example.org/ko/\"");
 
     
     var toggleSidebarElem = document.getElementById("toggle-sidebar");
@@ -369,7 +369,7 @@
     
     var isLandingBgImg = JSON.parse("null");
     
-    var isHome = JSON.parse("false");
+    var isHome = JSON.parse("true");
 
     function setNavbarBG(scrollTop) {
       if (isHome && isLandingBgImg && Object.keys(isLandingBgImg).length) {
@@ -563,7 +563,7 @@
 
   
     
-    var langprefix = JSON.parse("\"\"");
+    var langprefix = JSON.parse("\"/ko\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1072,21 +1072,22 @@
 <link rel="stylesheet" href="/css/main.min.css">
 
 
-    <meta name="description" content="" />
+    <link rel="alternate" type="application/rss&#43;xml" title="RSS" href="http://example.org/ko/index.xml">
+<meta name="description" content="The ZDoc theme for Hugo example site." />
 <meta name="keywords" content="">
 <meta name="created" content="0001-01-01T00:00:00&#43;0000">
 <meta name="modified" content="0001-01-01T00:00:00&#43;0000">
 
 
 <meta property="og:site_name" content="ZDoc">
-<meta property="og:title" content="404 Page not found">
-<meta property="og:url" content="/404.html">
+<meta property="og:title" content="ZDoc">
+<meta property="og:url" content="http://example.org/ko/">
 <meta property="og:type" content="website">
 
 <meta name="generator" content="Hugo 0.79.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="http://example.org/ko/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -1110,17 +1111,17 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "url" : "/404.html",
-    "name": "404 Page not found",
+    "url" : "http://example.org/ko/",
+    "name": "ZDoc",
     "description": "The ZDoc theme for Hugo example site.",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": ""
+      "@id": "http://example.org"
     },
     "publisher": {
       "@type": "Organization",
       "name": "ZDoc",
-      "url": ""
+      "url": "http://example.org"
     }
   }
 </script>
@@ -1228,12 +1229,12 @@
       <div class="navbar lmr">
         <div id="siteLogo" class="navbar__logo--wrapper">
   
-    <a href="/" title="" rel="home" class="navbar__logo--link">
+    <a href="/ko/" title="" rel="home" class="navbar__logo--link">
       <img src="/logo.png" alt="Home" class="navbar__logo">
     </a>
   
   
-    <a href="/" title="" rel="home" class="navbar__logo--text-link">
+    <a href="/ko/" title="" rel="home" class="navbar__logo--text-link">
       <h6 class="navbar__logo--text" data-bgimg="false">ZDoc</h6>
     </a>
   
@@ -1242,7 +1243,7 @@
         <div class="navbar__menu--wrapper">
           <div id="tabletLogo" class="hide">
   
-  <a href="/" rel="home" class="navbar__logo--link">
+  <a href="/ko/" rel="home" class="navbar__logo--link">
     <img src="/logo.png" alt="Home" class="navbar__logo">
   </a>
   
@@ -1257,7 +1258,7 @@
           <span id="navMenuMobile" class="hide">
   <button id="navCollapseBtn" class="navbar__dropdown--title" aria-label="Section Menu" data-dir="ltr">
     
-      page
+      ZDoc
     
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"/></svg>
   </button>
@@ -1270,7 +1271,7 @@
   
   
   <li class="navbar__menu--mobile-item ">
-    <a href="/docs" class="">Docs</a>
+    <a href="/ko/docs" class="">Docs</a>
   </li>
 
   
@@ -1278,7 +1279,7 @@
   
   
   <li class="navbar__menu--mobile-item ">
-    <a href="/updates" class="">Updates</a>
+    <a href="/ko/updates" class="">Updates</a>
   </li>
 
   
@@ -1286,7 +1287,7 @@
   
   
   <li class="navbar__menu--mobile-item ">
-    <a href="/blog" class="">Blog</a>
+    <a href="/ko/blog" class="">Blog</a>
   </li>
 
   </ul>
@@ -1300,7 +1301,7 @@
   
   
   <li class="navbar__menu--item ">
-    <a href="/docs" data-bgimg="false">Docs</a>
+    <a href="/ko/docs" data-bgimg="false">Docs</a>
   </li>
 
   
@@ -1308,7 +1309,7 @@
   
   
   <li class="navbar__menu--item ">
-    <a href="/updates" data-bgimg="false">Updates</a>
+    <a href="/ko/updates" data-bgimg="false">Updates</a>
   </li>
 
   
@@ -1316,7 +1317,7 @@
   
   
   <li class="navbar__menu--item ">
-    <a href="/blog" data-bgimg="false">Blog</a>
+    <a href="/ko/blog" data-bgimg="false">Blog</a>
   </li>
 
           </ul>
@@ -1366,6 +1367,34 @@
   <div class="dropdown-content lang__dropdown--content">
     
     
+    
+      
+      
+        
+        
+          
+            
+              <a href="http://example.org/" data-lang="en" class="lang__dropdown--item">English</a>
+            
+          
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+        
+          
+            
+              <a href="http://example.org/ko/" data-lang="ko" class="lang__dropdown--item active">한국어</a>
+            
+          
+        
+      
     
   </div>
 </div>
@@ -1474,10 +1503,24 @@
 </script>
 
         
+  <div class="top">
+  <header class="header home__banner--wrapper">
+    <div class="divider">
+      <div class="lmr">
         
-<main class="main">
-  Page not found
-</main>
+      </div>
+    </div>
+  </header>
+</div>
+
+        
+  <div class="mid">
+  <main class="main">
+    
+  </main>
+  
+</div>
+
 
         
 <div class="bot">
