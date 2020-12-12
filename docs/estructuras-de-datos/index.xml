@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Estructuras de datos on ZDoc</title>
+    <link>/docs/estructuras-de-datos/</link>
+    <description>Recent content in Estructuras de datos on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    
+        <atom:link href="/docs/estructuras-de-datos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Estructuras lineales</title>
+        <link>/docs/estructuras-de-datos/estructuras-lineales/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-lineales/</guid>
+        <description>Table of Contents  Acerca de Arrays (arreglos) Arrays multidimensionales Vectors (vectores) Stacks (pilas) Queues (colas)    Acerca de Rellenar página
+Arrays (arreglos) Los arrays son conjuntos de datos que se almacenan en memoria de manera contigua usando el mismo nombre. Se usan índices para diferenciar los distintos valores del arreglo.
+Para crear una arreglo es necesario saber la cantidad de elementos que van a componer nuestro arreglo, pues la cantidad de elementos no se puede cambiar.</description>
+      </item>
+      
+      <item>
+        <title>Estructuras en forma de árbol</title>
+        <link>/docs/estructuras-de-datos/estructuras-de-arboles/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-de-arboles/</guid>
+        <description>Table of Contents  Acerca de Set (conjunto) Map (mapa, tabla de hashing)    Acerca de Véase: arbol binario
+Set (conjunto) Es una lista que no permite que hayan elementos repetidos.
+Inicialización Incluimos la librería:
+1  #include &amp;lt;set&amp;gt;   Inicializamos nuestro conjunto:
+2  set &amp;lt; int &amp;gt; conjunto; // int puede ser reemplazado con cualquier otro tipo de dato    insert (Insertar) Inserta un dato.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

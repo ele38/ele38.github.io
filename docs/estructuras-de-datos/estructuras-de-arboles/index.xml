@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Estructuras en forma de árbol on ZDoc</title>
+    <link>/docs/estructuras-de-datos/estructuras-de-arboles/</link>
+    <description>Recent content in Estructuras en forma de árbol on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    
+        <atom:link href="/docs/estructuras-de-datos/estructuras-de-arboles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Acerca de</title>
+        <link>/docs/estructuras-de-datos/estructuras-de-arboles/info/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-de-arboles/info/</guid>
+        <description>Véase: arbol binario</description>
+      </item>
+      
+      <item>
+        <title>Set (conjunto)</title>
+        <link>/docs/estructuras-de-datos/estructuras-de-arboles/set/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-de-arboles/set/</guid>
+        <description>Table of Contents  Inicialización insert (Insertar) find (Encontrar) erase (borrar) Iterar a través de un conjunto    Es una lista que no permite que hayan elementos repetidos.
+Inicialización Incluimos la librería:
+1  #include &amp;lt;set&amp;gt;   Inicializamos nuestro conjunto:
+2  set &amp;lt; int &amp;gt; conjunto; // int puede ser reemplazado con cualquier otro tipo de dato    insert (Insertar) Inserta un dato. Retorna un par de elementos, el primero siendo el iterador del valor insertado y el segundo siendo un bool que marca si es que ya existía o no.</description>
+      </item>
+      
+      <item>
+        <title>Map (mapa, tabla de hashing)</title>
+        <link>/docs/estructuras-de-datos/estructuras-de-arboles/map/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-de-arboles/map/</guid>
+        <description>Table of Contents  Ejemplo cotidiano Inicializar Insert (insertar) Operar con los valores Find (encontrar) Erase (borrar) Recorrer los valores de un mapa Dudas que no dejan dormir    Toma dos datos, una llave y un valor. Puedes buscar una llave en tiempo logarítmico con la implementación de la STL. Pero con otras implementaciones se puede hacer en tiempo constante. Las llaves no se pueden repetir.
+Ejemplo cotidiano Libros:</description>
+      </item>
+      
+    
+  </channel>
+</rss>

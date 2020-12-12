@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Estructuras lineales on ZDoc</title>
+    <link>/docs/estructuras-de-datos/estructuras-lineales/</link>
+    <description>Recent content in Estructuras lineales on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    
+        <atom:link href="/docs/estructuras-de-datos/estructuras-lineales/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Acerca de</title>
+        <link>/docs/estructuras-de-datos/estructuras-lineales/info/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-lineales/info/</guid>
+        <description>Rellenar página</description>
+      </item>
+      
+      <item>
+        <title>Arrays (arreglos)</title>
+        <link>/docs/estructuras-de-datos/estructuras-lineales/arrays/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-lineales/arrays/</guid>
+        <description>Table of Contents  Inicialización Leer el valor de un arreglo Asignar valores a un arreglo    Los arrays son conjuntos de datos que se almacenan en memoria de manera contigua usando el mismo nombre. Se usan índices para diferenciar los distintos valores del arreglo.
+Para crear una arreglo es necesario saber la cantidad de elementos que van a componer nuestro arreglo, pues la cantidad de elementos no se puede cambiar.</description>
+      </item>
+      
+      <item>
+        <title>Arrays multidimensionales</title>
+        <link>/docs/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/</guid>
+        <description>Table of Contents  Inicializar un arreglo multidimensional Asignar valores en un arreglo multidimensional    Un array multidimensional es aquel que requiuere de más de un índice para ser llamado, como su nombre lo indica, es útil para cuando necesitamos acceder a datos que requieren más de una dimensión, como por ejemplo valores dentro de una malla. Otra forma de enternder los arrays multidimensionales es como un arreglo de arreglos (de arreglos de arreglos.</description>
+      </item>
+      
+      <item>
+        <title>Vectors (vectores)</title>
+        <link>/docs/estructuras-de-datos/estructuras-lineales/vectors/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-lineales/vectors/</guid>
+        <description>Table of Contents  Inicializar un vector Asignar un valor push back (empujar atrás) pop back (quitar atrás) insert (insertar) erase (borrar) Iteradores de un arreglo    Los vectores son como arreglos, excepto de que el tamaño es dinámico, es decir, se puede cambiar.
+Inicializar un vector Incluimos la librería:
+1  #include &amp;lt;vector&amp;gt;   Inicializamos nuestro vector &amp;ldquo;vec&amp;rdquo;:
+2 3  int n = 3; vector &amp;lt; int &amp;gt; vec(n, 0); // Inicializa un vector de tamaño 3 con todos sus valores = 0.</description>
+      </item>
+      
+      <item>
+        <title>Stacks (pilas)</title>
+        <link>/docs/estructuras-de-datos/estructuras-lineales/stacks/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-lineales/stacks/</guid>
+        <description>Table of Contents  push (empujar) top (cima) pop (quitar) empty (vacío) size (tamaño)    La pila es una estructura de datos lineal al que sólo puedes acceder al último elemento que fue insertado. Imagina una pila de platos, por ejemplo.
+1  stack &amp;lt; int &amp;gt; pilita;    push (empujar) Empuja un dato a la cima de la pila.
+2  pilita.push(8); // Empuja un 8 a la cima de la pila.</description>
+      </item>
+      
+      <item>
+        <title>Queues (colas)</title>
+        <link>/docs/estructuras-de-datos/estructuras-lineales/queues/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/docs/estructuras-de-datos/estructuras-lineales/queues/</guid>
+        <description>Table of Contents  push (empujar) front (frente) pop (quitar) empty (vacío) size (tamaño)    La cola es una estructura de datos lineal al que sólo puedes acceder al primer elemento que fue insertado. Imagina una fila de una caja de un supermercado, por ejemplo.
+1  queue &amp;lt; int &amp;gt; colita;    push (empujar) Añade un dato al final de la cola.
+2 3 4 5 6  colita.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

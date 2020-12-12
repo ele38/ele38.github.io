@@ -23,7 +23,15 @@
   </url>
   
   <url>
+    <loc>/docs/estructuras-de-datos/estructuras-lineales/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/estructuras-de-datos/estructuras-de-arboles/</loc>
   </url>
   
   <url>
@@ -43,6 +51,18 @@
   </url>
   
   <url>
+    <loc>/docs/estructuras-de-datos/estructuras-de-arboles/info/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/estructuras-de-datos/estructuras-lineales/info/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/estructuras-de-datos/estructuras-lineales/arrays/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/algoritmos-de-ordenamiento/algoritmos-de-fuerza-bruta/bubble/</loc>
   </url>
   
@@ -51,7 +71,15 @@
   </url>
   
   <url>
+    <loc>/docs/estructuras-de-datos/estructuras-de-arboles/set/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/en-la-stl/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/estructuras-de-datos/estructuras-lineales/multi-dimension-arrays/</loc>
   </url>
   
   <url>
@@ -63,11 +91,23 @@
   </url>
   
   <url>
-    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/implementaciones-propias/con_while/</loc>
+    <loc>/docs/estructuras-de-datos/estructuras-de-arboles/map/</loc>
   </url>
   
   <url>
-    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/implementaciones-propias/con_recursion/</loc>
+    <loc>/docs/estructuras-de-datos/estructuras-lineales/vectors/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/estructuras-de-datos/estructuras-lineales/stacks/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/estructuras-de-datos/estructuras-lineales/queues/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/implementaciones-propias/con_while/</loc>
   </url>
   
   <url>
@@ -76,6 +116,10 @@
   
   <url>
     <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/en-la-stl/binary_search/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/algoritmos-de-busqueda/b%C3%BAsqueda-binaria/implementaciones-propias/con_recursion/</loc>
   </url>
   
   <url>
